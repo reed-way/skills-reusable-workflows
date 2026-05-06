@@ -48,6 +48,6 @@ jobs:
           node-version: ${{ inputs.node-version }}
           cache: npm
       - run: npm ci
-      - run: npm npx playwright install --with-deps chromium
+      - run: npx playwright install --with-deps chromium
       - run: npm run test:e2e
         
